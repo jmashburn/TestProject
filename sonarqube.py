@@ -5,7 +5,7 @@ sonarqube_url = 'https://sonarqube.iwobble.com'
 api_endpoint = '/api'
 
 # API authentication token or username/password
-api_token = 'your-api-token'
+api_token = ${SONAR_API_TOKEN}
 
 # Function to make API requests
 def make_api_request(endpoint, params=None):
