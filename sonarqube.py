@@ -5,16 +5,11 @@ sonarqube_url = 'http://sonarqube.iwobble.com'
 api_endpoint = '/api'
 
 # API authentication token or username/password
-api_token = 'your-api-token'  # Or use username and password
-# username = 'your-username'
-# password = 'your-password'
+api_token = 'your-api-token'
 
 # Function to make API requests
 def make_api_request(endpoint, params=None):
     headers = {'Authorization': f'Bearer {api_token}'} if api_token else None
-    # Use the following line if using username/password instead of token
-    # auth = (username, password) if username and password else None
-
     response = requests.get(f'{sonarqube_url}{api_endpoint}{endpoint}', params=params, headers=headers)
 
     if response.status_code == 200:
