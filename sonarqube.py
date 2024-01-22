@@ -1,7 +1,7 @@
 import requests
 
 # SonarQube server URL and API endpoint
-sonarqube_url = 'http://sonarqube.iwobble.com'
+sonarqube_url = 'https://sonarqube.iwobble.com'
 api_endpoint = '/api'
 
 # API authentication token or username/password
